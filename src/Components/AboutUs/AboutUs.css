@@ -1,0 +1,132 @@
+.container {
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 45px;
+  z-index: 1;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.about-wrapper {
+  display: flex;
+  align-items: center;
+}
+.about-wrapper img {
+  width: 550px;
+  object-fit: cover;
+  margin: 60px 50px 60px 100px;
+  border-radius: 6px;
+  padding: 0px;
+  height: auto;
+  box-shadow: 12px 12px #e6e8ec;
+}
+.about-us-title {
+  margin: 60px 70px 60px 0px;
+}
+.about-us-title h2 {
+  margin-bottom: 1px;
+  padding: 2px 10px;
+  color: #00aaa0;
+  font-size: 28px;
+}
+.about-us-title p {
+  margin-top: 5px;
+  padding: 2px 10px;
+  text-align: justify;
+  font-size: 18px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+  color: #777;
+}
+.about-us-title span {
+  color: #00aaa0;
+  font-size: 25px;
+  vertical-align: middle;
+}
+.about-us-title hr {
+  width: 95%;
+  height: 2px;
+  margin: 6px 9px;
+  background-color: #00aaa0;
+  border: none;
+}
+.about-Us-btn {
+  color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #393e46;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  width: auto;
+}
+.about-Us-btn:hover{
+    background-color: #00aaa0;
+    transition: all ease 0.4s;
+}
+@media (max-width: 1024px) {
+  .about-wrapper {
+    flex-direction: column;
+  }
+  .about-wrapper img {
+    width: 50%;
+    margin: 20px 0;
+    box-shadow: 8px 8px #e6e8ec;
+  }
+  .about-us-title {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .about-us-title h2 {
+    font-size: 1.75em;
+  }
+
+  .about-us-title p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+  }
+  .about-wrapper img {
+    width: 70%;
+    margin: 20px 0;
+  }
+  .about-us-title {
+    max-width: 100%;
+    margin: 10px 5px;
+  }
+
+  .about-us-title h2 {
+    font-size: 1.75em;
+  }
+
+  .about-us-title p {
+    font-size: 1em;
+  }
+  .about-Us-btn {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-title h2 {
+    font-size: 1.75em;
+  }
+
+  .about-us-title p {
+    font-size: 0.9em;
+  }
+  .about-Us-btn{
+    width: -webkit-fill-available;
+    margin-right: 10px;
+  }
+}
